@@ -1,3 +1,3 @@
 # JS_introduction
 
-#These are my first scripts in js.
+I designed the script to be easy to understand in the terminal window. 
