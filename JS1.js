@@ -4,10 +4,10 @@ console.log("\nJavaScript basics:\n")
 //Intoduction
 console.log("Introduction:\nJS has 5 datatypes:\nString, Integer, Boolean, null, and Undefined:");
 //The console.log ~ print statement.
-console.log("Ex. String: Hello, world!"); //String.
+console.log("Ex. String: Hello, world!"); //str
 console.log(`Ex. String: Declareing 8/4 inside the console.log returns a string: ${8/4}`); //str 
-console.log(`Ex. String: Calculating the length of "I write code." string returns a string: ${"I write code.".length}`); //string.
-console.log('EX: Integer: console.log(8/4):'); console.log(8/4);
+console.log(`Ex. String: Calculating the length of "I write code." string returns a string: ${"I write code.".length}`); //str
+console.log('EX: Integer: console.log(8/4):'); console.log(8/4); //int
 console.log("Ex. Boolean: 1 == 1 ");
 console.log(1 == 1); //Boolean. 
 console.log("\n\n");
