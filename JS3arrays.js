@@ -134,7 +134,7 @@ function sumarrays(a,b){
     }
 
     return c;
-
+}
 var a = [1,2,3,4]; 
 var b = [1,2,3,4,5,6];  
 console.log(sumarrays(a,b));
@@ -253,7 +253,7 @@ function rotateleft(x){
         x[i] = x[i + 1];
     }
 
-    x[last_location] = first_value;
+    x[last_location] = first_value
     return x;
 }
 
@@ -274,5 +274,5 @@ function once(array){
     
   }
 
-v = [1,2,2,3,4,5,5,5,6,7,7,8]
+v = [1,2,2,3,4,5,5,5,6,7,7,8];
 console.log(once(v));
