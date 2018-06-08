@@ -34,15 +34,18 @@ console.log("\n\n");
 
 //Variables: 
 console.log("Variables: \nconst, let, var and undefined");
-console.log("const: variable that cannot be change: const food = broccoli ")
-const food = "broccoli"; //Constant variable is a variable that cannot change: const food = "broccoli".
+//Constant variable is a variable that cannot change: const food = "broccoli".
+console.log("const: variable that cannot be change: const food = broccoli ") 
+const food = "broccoli";
+//let variable is a variable that can be reassigned.
 console.log("let: variable that can be change: here drink = 'Soda' and than drink = 'Cola'")
-let drink = "Soda"; //let variable is a variable that can be reassigned.
+let drink = "Soda"; 
 console.log(drink);
 drink = "Cola";
 console.log(drink); 
+//Undefined varaible is the 5th Datatype in JS.
 console.log("Undefiend: declaring a variable without assigning any value to it.\nEx: let valueless;")
-let valuesless; //Undefined varaible is the 5th Datatype in JS (togather with Strings, Numbers, Booleans and Null)
+let valuesless; 
 console.log(valuesless);
 console.log("var: variable that can be reassigned.\nUnlike 'let', it is a global varaible.\nvar name = 'nadav', than name - 'john'")
 var name = 'nadav';
@@ -62,7 +65,8 @@ console.log(y += x);
 y++;
 console.log(y);
 console.log(y*=y);
-console.log(y--); // This shows ++ or -- does not print out the new value of y if it is assigned in console.log
+// This shows ++ or -- does not print out the new value of y if it is assigned in console.log
+console.log(y--); 
 console.log(y);
 console.log("# Notic, the y-- statment prints out 25. The value 24 is printed only in the next line.\nThat's because the current value is 25, and the assignemts occures only after\nexecution of the command.")
 
@@ -72,6 +76,8 @@ console.log("\n\nString Interpolation")
 console.log("Created a variable: let myDog = 'Joy'");
 let myDog = 'Joy';
 console.log("Two ways to declare it inside console.log:\n1.'My dog name is' + my dog +'.'\n2.'my dog name is ${name}.'\nOutputs:");
-console.log("My dog name is " + myDog +"." );  // The classic way to insert variables to a string. 
-console.log(`my dog name is ${myDog}.`);       //Using ` `(next to the 1 bottom) and ${variable_name}, much more simple.
+// The classic way to insert variables to a string. 
+console.log("My dog name is " + myDog +"." ); 
+//Using ` `(next to the 1 bottom) and ${variable_name}, much more simple.
+console.log(`my dog name is ${myDog}.`);  
 console.log("\n\n");
