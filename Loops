@@ -1,0 +1,139 @@
+//Loops and arrays training. 
+
+
+// Q1. Function that recieves an array and returns the sum of the elements squeres.  
+
+// Q1. Program 01.
+let arr1 = [1,2,3,4,10];
+
+function pow_sum(x){
+        let i = 0; let j = 0;
+        while (i < x.length){
+        j += x[i] * x[i];  
+        i++;
+        }
+    return j;
+    }
+
+
+console.log(pow_sum(arr1));
+
+// Q1. Program 02.
+
+function sum(x){
+    var sum = 0;
+    for (var i = 0; i < x.length; i++){
+        sum += x[i]*x[i];
+    }
+    return sum; 
+}
+var a = [1,2,3,4]; 
+console.log(sum(a));
+
+
+
+
+// Q2. Function that recieves 2 arrays and returns a 3rd arrays with the sum of each element location of the 2 arrays.
+
+// Q2. Program 01.
+var a = [1,2,3,4]; 
+var b = [1,2,3,4,5,6];
+
+function arr_sum(a,b){
+
+    let k = 0; 
+    let i = 0;
+    let c = [];
+
+    if (a.length > b.length){
+        let diff = a.length - b.length; 
+        while ( k < a.length){
+            b.push(0);
+            c[i] = a[i] + b[i];
+            k++; 
+            i++;
+        };
+    }
+
+    else {
+        let diff = b.length - a.length;
+        while (k < b.length){
+            a.push(0);
+            c[i] = a[i] + b[i];
+            k++;
+            i++;
+        };
+    };
+    return console.log(a, b, c);
+};
+
+
+// Q2. Program 02. 
+function arr_sum2(a,b){
+
+    let k = 0; 
+    let i = 0;
+    let c = [];
+
+    if (a.length > b.length){
+        let diff = a.length - b.length; 
+        while( i < a.length){
+            while (k < diff){
+                    b.push(0);
+                    k++;
+                    };
+            c[i] = a[i] + b[i];
+            i++;
+        };
+    }
+
+    else {
+        let diff = b.length - a.length;
+        while(i < b.length){
+            while (k < diff) {
+                a.push(0);
+                k++;
+                };
+            c[i] = a[i] + b[i];
+            i++;
+        };
+    };
+    return console.log(a, b, c);
+};
+
+
+let x = [1,2,3,4];
+let y = [1,2,3,2,10];
+console.log(arr_sum(x,y));
+
+
+// Q2. Program 03.
+function sumarrays(a,b){
+    var c = [];
+    var i = 0; 
+
+    if (a.length > b.length){
+        var diff = a.length - b.length; 
+        while ( i < diff){ 
+            b.push(0);
+            i++;
+        }
+        for (var j = 0; j < a.length; j++) {
+            c[j] = a[j] + b[j];
+        }
+    } 
+
+    else {
+        var diff = b.length - a.length;
+        while ( i < diff){
+            a.push(0); 
+            i++;
+        }
+        for (var j = 0; j < b.length; j++){
+            c[j] = a[j] + b[j]
+        }
+    }
+
+    return c;
+}
+console.log(sumarrays(a,b));
